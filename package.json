@@ -1,0 +1,11 @@
+{
+  "name": "acxiom-crm",
+  "version": "1.0.0",
+  "description": "AcxiomCRM - Enterprise Role-Based CRM Web Application",
+  "scripts": {
+    "server": "cd server && npm start",
+    "client": "cd client && npm run dev",
+    "seed": "cd server && npm run seed",
+    "test": "node test_crm.js"
+  }
+}

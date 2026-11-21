@@ -1,0 +1,68 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+:root {
+  --primary-color: #0d6efd;
+  --secondary-color: #6c757d;
+  --sidebar-width: 240px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f4f6f9;
+  color: #333333;
+}
+
+.card {
+  border-radius: 0.6rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.card-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  font-weight: 600;
+}
+
+.table th {
+  background-color: #f8f9fa;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #6c757d;
+  font-weight: 600;
+}
+
+.table td {
+  vertical-align: middle;
+  font-size: 0.92rem;
+}
+
+.badge-role-admin {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.badge-role-manager {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+.badge-role-sales {
+  background-color: #198754;
+  color: #fff;
+}
+
+.metric-card {
+  transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.metric-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
