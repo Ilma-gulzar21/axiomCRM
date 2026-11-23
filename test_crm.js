@@ -1,19 +1,3 @@
-/**
- * AcxiomCRM Automated Verification & Test Script
- * 
- * Verifies the complete specification flow:
- * 1. Unauthenticated access blocked (401)
- * 2. Invalid customer rejected with exact validation messages (400)
- * 3. Bad opportunity rejected with exact validation messages (400)
- * 4. Bad follow-up rejected with exact validation message (400)
- * 5. Role-based access control & authorization scoping:
- *    - SalesExecutive sees scoped records; blocked from Admin endpoints (403)
- *    - Manager sees all CRM records; blocked from Admin endpoints (403)
- *    - Admin sees everything, including users and audit logs (200)
- * 6. Audit entries recorded and verified (200)
- * 7. /api/customers returns JSON DTO
- * 8. Dashboard metrics & Chart.js data structures verified
- */
 
 const BASE_URL = process.env.TEST_API_URL || 'http://localhost:5000/api';
 
